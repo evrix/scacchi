@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Only if needed
+# RewriteBase /caissa
+
+# Make sure it's not an actual file
+RewriteCond %{REQUEST_FILENAME} !-f
+# Make sure its not a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+# Rewrite the request to index.php
+RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
