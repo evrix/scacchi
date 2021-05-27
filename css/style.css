@@ -1,0 +1,232 @@
+/*
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+*/
+
+/* BOOTSTRAP */
+body {
+    font-family: 'Muli', sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: -.004em;
+    font-size: 16px;
+    padding: 4em;
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 1.28em;
+    letter-spacing: -.02em;
+    color: darkslategrey;
+}
+
+h2 {
+    text-align: center;
+    margin: 2.4em 4.8em .8em 4.8em;
+    border-bottom: .1em solid lightgrey;
+    color: darkslateblue;
+    background-color: darkseagreen;
+    border-radius: .3em;
+}
+
+h3 {
+    margin: 1.2em 9.6em .4em 9.6em;
+    padding-left: 1.2em;
+    border-bottom: .1em solid lightgrey;
+    color: midnightblue;
+    background-color: silver;
+    border-radius: .2em;
+}
+
+h4 {
+    font-style: italic;
+}
+
+p {
+    text-align: justify;
+    text-justify: auto;
+    text-indent: 1em;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+/* HEADER */
+.logo img {
+    float: left;
+    width: 12em;
+    margin-right: 2em;
+}
+
+.logo h1 {
+  position: relative;
+}
+
+header {
+/*     border: 1px solid grey;; */
+    padding: 1em;
+    box-shadow: 12px 8px 6px 4px #888888;
+}
+
+header > p {
+    font-size: 1.6em;
+    font-style: italic;
+    color: grey;
+}
+
+/* NAVIGATION MENU */
+nav {
+    margin: 2.4em .8em;
+    padding: .8em;
+    background: cadetblue;
+}
+
+nav > a {
+    margin: .4em;
+    padding: .4em;
+}
+
+ /* unvisited, visited and active link */
+nav > a:link, nav > a:visited, nav > a:active {
+    color: gold;
+    font-weight: 600;
+    background-color: cadetblue;
+    text-decoration: none;
+    padding: 0 .2em;
+}
+
+/* visited link */
+/*nav > a:visited {
+    color: green;
+    background-color: lightgreen;
+    text-decoration: none;
+}*/
+
+/* selected link */
+/*nav > a:active {
+    color: blue;
+    background-color: hotpink;
+    text-decoration: none;
+}*/
+
+/* mouse over or focused link */
+nav > a:hover, nav > a:focus {
+    color: cadetblue;
+    background-color: gold;
+    text-decoration: none;
+    padding: 1.6em .2em;
+}
+
+/* current menu link */
+nav > a.current:link, nav > a.current:active, nav >a.current:visited {
+    color: gold;
+    text-shadow: .1em .1em .4em navajowhite;
+    background-color: midnightblue;
+    padding: 1.2em .2em;
+
+}
+
+/* MAIN CONTENT */
+main{
+    width: 100%;
+}
+
+main::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* rivedere per numerazione lista
+.details {
+    counter-reset:list;
+    float: left;
+    width: 64%;
+    padding: .6em;
+}
+*/
+
+details {
+    font-size: 1.2em;
+    width: 56em;
+    margin: 1em;
+}
+
+/* to style the disclosure widget itself in WebKit for Safari */
+    details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary {
+    list-style:none;
+    margin: 1em;
+}
+
+/* rivedere per numerazione lista
+details > summary::before {
+    counter-increment:list;
+    content: counters(list, ".") ": ";
+}
+*/
+
+details > summary {
+    padding: .2em .6em;
+    width: 54em;
+    background-color: #ddd;
+    border: none;
+    box-shadow: .4em .4em .6em black;
+    cursor: pointer;
+    list-style: none;
+}
+
+details > p, details > ol {
+    border-radius: .2em;
+    background-color: #ccc;
+    padding: .2em .4em;
+    margin-bottom: .2em;
+    box-shadow: .4em .4em .6em blue;
+}
+
+/* TASTO ONNIPRESENTE */
+#tornaSU {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 8em; /* Place the button at the bottom of the page */
+  right: 2em; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: orangered; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#tornaSU:hover {
+  background-color: oldlace; /* Add a dark-grey background on hover */
+  color: orangered;
+}
+
+/* FOOTER */
+footer {
+    margin: 4em 0 1em 0;
+    padding: 1.2em;
+    font-size: 1.2em;
+    color:yellow;
+    background: brown;
+}
