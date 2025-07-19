@@ -1,0 +1,35 @@
+body {
+  font-family: "Helvetica", sans-serif, "Courier New", monospace;
+  background: lightgrey;
+  margin: 0 .8rem 0 .4rem;
+}
+
+h1, h2, h3 {
+  margin: 1.2rem 0 .6rem 0.8rem;
+  text-decoration: underline red double .04em;
+}
+
+p {
+  text-align: justify;
+  text-justify: auto;
+  text-indent: .8em;
+}
+
+dd {
+  margin: 0 0 .6em 0;
+  text-align: justify;
+  text-justify: auto;
+}
+
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+code {
+  font-size: 1.2em;
+}
